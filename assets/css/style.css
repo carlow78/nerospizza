@@ -1,0 +1,21 @@
+/* Asterisk wildcard used to override a browser default styles. */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background-color: green;
+}
+
+main{
+    background-color: red;
+}
+
+footer {
+    background-color: yellow;
+}
