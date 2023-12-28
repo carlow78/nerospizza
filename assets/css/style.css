@@ -1,3 +1,6 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 /* Asterisk wildcard used to override a browser default styles. */
 
 *{
@@ -15,6 +18,8 @@ body{
 
     /* Generic project color style */
     color: black;
+    /* Add Italiana google font style with sans-serif as a fallback */
+    font-family: 'Italiana', sans-serif;
 }
 
 
@@ -22,6 +27,12 @@ body{
 
 header {
     background-color: green;
+}
+
+/* Styling for restaurant name */
+
+h1{
+    font-family: 'Italiana' sans-serif;
 }
 
 main{
