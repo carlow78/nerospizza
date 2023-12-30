@@ -24,24 +24,238 @@ body{
 }
 
 
-/* Header */
 
-header {
-    background-color: green;
-}
 
-/* Styling for restaurant name */
 
-h1{
-    font-family: 'Italiana' sans-serif;
-}
+/* Menu anchor element */
+
+
+
+
+
+
+
 
 main{
-    background-color: red;
+    background-color: white;
     /* Make main element take up any surplus space between header and footer */
     flex: 1 0 auto;
+     /* Push element down to make Main content visible */
+     margin-top: 47px;
 }
 
-footer {
-    background-color: yellow;
+/* Hamburger Responsive menu  */
+
+
+
+/* Menu formatting */
+
+a{
+  color: #000;
+  width: 45vh;
+}
+
+.header{
+  background-color: grey;
+  /* 10% Transparent box shadow using rgba */
+  box-shadow: 1px 1px 4px rgba (0,0,0,.1);
+/* Anchor menu to top */
+  position:fixed;
+  width: 120;
+/* So header menu will appear on top over the content */
+  z-index:3;
+}
+
+/* Our un-ordered main menu */
+.header ul{
+  margin:0;
+  padding:0;
+  /* Turns off bullet listing */
+  list-style: none;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+/* Styling for header anchor tags */
+.header ul a{
+/* Mouse-over hand only appears when hovered over our menu links */
+  display: block;
+  padding: 20px;
+/* For larger screens so menu is spread out */
+  border-right: 1px solid #ddd;
+  text-decoration: none;
+
+}
+
+/* Change hover over color */
+
+.header ul a:hover{
+  background-color: #ddd;
+}
+
+/* Styling for menu logo */
+
+.header .logo{
+  float: top;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+/* Styling for mobile menu - menu items are hidden till hamburger icon is clicked */
+
+
+.header .menu {
+  /* Hide the menu */
+  clear:both;
+  /* Animation collapse & expand menu when clicked */
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* Styling for menu-icon span element */
+
+.header .menu-icon{ 
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  /* Change to arrow to pointer */
+  cursor: pointer;
+}
+
+/* Styling for nav-icon child element aka top bun of hamburger */
+
+.header .menu-icon .nav-icon{
+background-color: #333;
+display: block;
+height: 2px;
+width: 18px;
+position: relative;
+transition:background .2s ease-out;
+}
+
+/* Sudo element for our burger (middle tier) of our hamburger */
+
+.header .menu-icon .nav-icon:before{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  /* Menu animation */
+  transition: all .2s ease-out;
+/* This moves element below previous styling */
+  top: 5px;
+}
+
+/* Styling as above this our bottom bun for hamburger */
+
+.header .menu-icon .nav-icon:after{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  /* Menu animation */
+  transition: all .2s ease-out;
+/* This moves element below previous styling */
+  top: 10px;
+}
+
+/* Styling to hide our checkbox */
+
+.header .menu-btn{
+  display:none;
+}
+
+/* Styling when user clicks on this, the hamburger element expands to show our menu and disappears when they click again. This is achieved with our above transitioning rules. */
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
+
+/* Animation to turn our hamburger into an X (hiding top element using transparency). */
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* The hero background image */
+
+.hero-image {
+  
+  
+/* Linear-gradient to slightly fade the 3 pizza image into the background */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.jpg");
+
+
+  /* Position and center the image to scale nicely on all screens */
+
+  
+  height: 85vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+
+/* SOCIAL MEDIA FOOTER */
+
+#social-networks {
+  background-color: lightgray;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  /* Remove listing bullet points */
+  list-style-type: none;
+}
+
+/* Targets i elements for favicons */
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+
+@media screen and (min-width: 653px){
+
+  .header li {
+    float: left;   
+  }
+
+.header li a{
+  padding: 20px 30px;
+}
+
+.header.menu{
+  clear:none;
+  float: right;
+  max-height:none;
+}
+
+.header .menu-icon{
+  display:none;
+}
+
 }
