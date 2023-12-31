@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Asterisk wildcard used to override a browser default styles. */
 
@@ -19,21 +19,11 @@ body{
     /* Generic project color style */
     color: black;
     
-    /* Add Italiana google font style with sans-serif as a fallback */
-    font-family: 'Italiana', sans-serif;
+    /* Add Poppins google font style with sans-serif as a fallback */
+    font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-
 /* Menu anchor element */
-
-
-
-
-
-
 
 
 main{
@@ -215,6 +205,35 @@ background: transparent;
 
 }
 
+/* MENU PAGE STYLING */
+
+/* PIZZA MENU RESPONSIVE TABLE */
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+/*Lightgreen border for our pizza ingredients. */
+
+tr:nth-child(even){background-color: lightgreen}
+
+/* Allergy Contents Text box */
+
+.allergy{
+  background-color: red;
+  color: #ffffff;
+  width: 60vh;
+}
 
 
 /* SOCIAL MEDIA FOOTER */
