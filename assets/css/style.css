@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Moonrocks&display=swap');
 
 /* Asterisk wildcard used to override a browser default styles. */
 
@@ -13,21 +13,22 @@
 
 body{
     
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 
     /* Generic project color style */
-    color: black;
+    color: green;
     
     /* Add Poppins google font style with sans-serif as a fallback */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins','Rubik Moonrock', sans-serif;
 }
 
 /* Menu anchor element */
 
 
 main{
-    background-color: white;
+    background-color: cornsilk;
     /* Make main element take up any surplus space between header and footer */
     flex: 1 0 auto;
      /* Push element down to make Main content visible */
@@ -36,17 +37,15 @@ main{
 
 /* Hamburger Responsive menu  */
 
-
-
 /* Menu formatting */
 
 a{
-  color: #000;
+  color: red;
   width: 45vh;
 }
 
 .header{
-  background-color: grey;
+  background-color: green;
   /* 10% Transparent box shadow using rgba */
   box-shadow: 1px 1px 4px rgba (0,0,0,.1);
 /* Anchor menu to top */
@@ -64,7 +63,7 @@ a{
   /* Turns off bullet listing */
   list-style: none;
   overflow: hidden;
-  background-color: lightgray;
+  background-color: whitesmoke;
 }
 
 /* Styling for header anchor tags */
@@ -73,7 +72,7 @@ a{
   display: block;
   padding: 20px;
 /* For larger screens so menu is spread out */
-  border-right: 1px solid #ddd;
+  border-right: 1px solid white;
   text-decoration: none;
 
 }
@@ -81,12 +80,14 @@ a{
 /* Change hover over color */
 
 .header ul a:hover{
-  background-color: #ddd;
+  background-color: gray;
 }
 
 /* Styling for menu logo */
 
 .header .logo{
+  font-family:  'Fredericka The Great', sans-serif;
+color: white;
   float: top;
   display: block;
   font-size: 2em;
@@ -117,7 +118,7 @@ a{
 /* Styling for nav-icon child element aka top bun of hamburger */
 
 .header .menu-icon .nav-icon{
-background-color: #333;
+background-color: #ffffff;
 display: block;
 height: 2px;
 width: 18px;
@@ -128,7 +129,7 @@ transition:background .2s ease-out;
 /* Sudo element for our burger (middle tier) of our hamburger */
 
 .header .menu-icon .nav-icon:before{
-  background: #333;
+background-color: #ffffff;
   content: "";
   display: block;
   height: 100%;
@@ -143,7 +144,7 @@ transition:background .2s ease-out;
 /* Styling as above this our bottom bun for hamburger */
 
 .header .menu-icon .nav-icon:after{
-  background: #333;
+background-color: #ffffff;
   content: "";
   display: block;
   height: 100%;
@@ -183,33 +184,40 @@ background: transparent;
   top:0;
 }
 
-
-/* The hero background image */
-
-.hero-image {
-  
-  
-/* Linear-gradient to slightly fade the 3 pizza image into the background */
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.jpg");
-
-
-  /* Position and center the image to scale nicely on all screens */
-
-  
-  height: 85vh;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-}
-
 /* MENU PAGE STYLING */
 
-/* PIZZA MENU RESPONSIVE TABLE */
 
+/* WELCOME BANNER */
+
+.welcome{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-vinicius-benedit-1082343.jpg");
+  height: 35vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    font-family: 'Fredericka The Great', sans-serif;
+    color: white;
+    text-align: center;
+  
+}
+
+.offers{
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: green;
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+
+/* PIZZA MENU RESPONSIVE TABLE */
 
 table{
   overflow-x:auto;
@@ -240,9 +248,32 @@ tr:nth-child(even){background-color: lightgreen}
   
 }
 
+/* The hero background image */
+
+.hero-image {
+  
+  
+  /* Linear-gradient to slightly fade the 3 pizza image into the background */
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.jpg");
+  
+  
+    /* Position and center the image to scale nicely on all screens */
+  
+    
+    height: 85vh;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+
 /* CONTACT US FORM */
 
 /* Form */
+
 #contactus {
     
   background-size: cover;
@@ -288,10 +319,13 @@ tr:nth-child(even){background-color: lightgreen}
 /* SOCIAL MEDIA FOOTER */
 
 #social-networks {
+  
+  
   background-color: black;
   text-align: center;
-  padding: 20px 0;
   display: flex;
+  padding: 20px 0;
+  bottom: 0;
   justify-content: space-evenly;
   /* Remove listing bullet points */
   list-style-type: none;
