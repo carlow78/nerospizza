@@ -86,12 +86,13 @@ a{
 /* Styling for menu logo */
 
 .header .logo{
-  font-family:  'Fredericka The Great', sans-serif;
-color: white;
-  float: top;
+  
   display: block;
-  font-size: 2em;
-  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 50%
+  
 }
 
 /* Styling for mobile menu - menu items are hidden till hamburger icon is clicked */
@@ -184,10 +185,10 @@ background: transparent;
   top:0;
 }
 
-/* MENU PAGE STYLING */
+/* INDEX PAGE STYLING */
 
 
-/* WELCOME BANNER */
+/* Nero's Pizzeria Banner background - Pizza and Woodfire oven */
 
 .welcome{
 
@@ -211,9 +212,60 @@ background: transparent;
     border-spacing: 0;
     background-color: green;
     color: #ffffff;
-
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     
+  }
+
+  .location{
+    align-content: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .aboutus{
+
+    /* Linear-gradient to slightly fade the 3 pizza image into the background */
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/chef-with-pizza-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 35vh;
+
+    align-items: baseline;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* MENU PAGE STYLING
+
+
+  /* Menu hero background image */
+
+.hero-image {
+  
+  
+  /* Linear-gradient to slightly fade the 3 pizza image into the background */
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.jpg");
+  
+  
+    /* Position over menu */
+  
+    
+    height: 35vh;
+
+    text-align: center;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
   }
 
 
@@ -243,25 +295,28 @@ tr:nth-child(even){background-color: lightgreen}
   overflow-x: auto;
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: red;
+  background-color: gray;
   color: #ffffff;
   
 }
 
-/* The hero background image */
 
-.hero-image {
+/* CONTACT US PAGE STYLING */
+
+.contactus-image {
   
   
   /* Linear-gradient to slightly fade the 3 pizza image into the background */
   
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/girl-with-pizza.jpg");
   
   
-    /* Position and center the image to scale nicely on all screens */
+    /* Position over menu */
   
     
-    height: 85vh;
+    height: 75vh;
+
+    text-align: center;
   
     background-position: center;
     background-repeat: no-repeat;
@@ -270,7 +325,6 @@ tr:nth-child(even){background-color: lightgreen}
   
   }
 
-/* CONTACT US FORM */
 
 /* Form */
 
@@ -321,7 +375,7 @@ tr:nth-child(even){background-color: lightgreen}
 #social-networks {
   
   
-  background-color: black;
+  background-color: #ff0000;
   text-align: center;
   display: flex;
   padding: 20px 0;
