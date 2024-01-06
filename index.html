@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +15,7 @@
     <!--Web Site Title-->
     <title>Nero's Pizza</title>
 
-    <!--Pizza Favicon --> 
+    <!--Pizza Favicon -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -31,18 +33,25 @@
     <!--Header-->
 
     <header class="header">
-        <!-- Restaurant Logo to link back to home page -->
-        <a href="index.html" class="logo"><img src="assets/images/nero-logo-small.jpg" alt="Nero Logo" srcset="Nero Logo"></a>
-    <!--Menu checkbox (not visible to user)-->
+        <!-- Restaurant Name to link back to home page -->
+
+        <a href="index.html" class="logo">Nero's Pizza</a>
+
+        <!--Menu checkbox (not visible to user)-->
+
         <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <!--Hamburger element -->
+
+        <!--Hamburger element for mobiles -->
+
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-    <!-- Navigation menu -->
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+
+        <!-- Navigation menu -->
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
 
     </header>
 
@@ -50,85 +59,70 @@
 
     <main>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      
-      <div class="welcome">
-        <div>
+        <div class="welcome">
+
+            <div>
+                <h1>Nero's Pizza</h1>
+                <h5><i>The best pizzeria in Galway</i></h5>
+            </div>
+
+        </div>
+
+        <div class="offers">
+
+            <h5>Our Latest Offer</h5>
+
+            <h6><b>Buy 2 Pizzas Get a 3rd Free.</b></h6>
+            <h6><i>Limited time offer expires 31/1/24</i></h6>
+
+            <button onclick="window.location.href = 'menu.html' ;">Our Pizzas Menu</button>
+
+        </div>
+
+        <div class="aboutus">
+
+        </div>
+
+        <h4>About Us</h4>
+        <br>
+        <p><i>Why do all the best Pizzeria have to be in New York, London, or Rome?</i></p>
+
+        <br>
+        <p>In Ireland, we have the best quality ingredients on our doorstep.</p>
+        <br>
+        <p>In partnership with local suppliers across the country. We only choose the best and finest ingredients for our stonebased pizzas. We are always looking for ways to improve, so please feel free to <a href="contact-us.html"
+                aria-label="Opens contact us web page">contact us</a> with any suggestions.</p>
+
+        <br>
+
+        </div>
+
+
+        <div class="location">
+
+            <h4 i class="fa-solid fa-location-dot">Where to Find Us</i></h4>
             <br>
+
+
             <br>
-            <br>
-        <h1>Nero's Pizza</h1>
-        <h5><i>The best pizzeria in Galway</i></h5>
-      </div>
-      <br>
-      
-     
+            <!--Google Maps view of Oranmore where pizzeria is located -->
 
-      <br>
-      <br>
-        
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5675.64351166279!2d-8.936296553917215!3d53.26599081245668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b904e4107206b%3A0xa00c7a997321a30!2sOranmore%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1704129225936!5m2!1sen!2sie"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      </div>
+            <p><b>Address:</b></p>    
+            <p>98 Main Street, Oranmore, Galway</p>
+            <p><u>Eircode:</u>H91 Y6 Z4</p>
+            <p><i class="fa-solid fa-square-phone"> 091 123456</i></p>
 
-      <div class="offers">
-        <br>
-        <h5>Our Latest Offer</h5>
-        
-        <h6>Buy 2 Pizzas Get a 3rd Free.</h6>
-        <h6><i>Limited time offer expires 31/1/24</i></h6>
-        <br>
-        <button onclick="window.location.href = 'menu.html' ;">Our Pizzas Menu</button> 
-        <br>
-        <br>
-      </div> 
-<br>
-      
-<div class="location">
 
-      <h4 i class="fa-solid fa-location-dot">Where to Find Us</i></h4>
-      <br>
-      
-
-      <br>
-        <!--Google Maps view of Oranmore where pizzeria is located -->
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5675.64351166279!2d-8.936296553917215!3d53.26599081245668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b904e4107206b%3A0xa00c7a997321a30!2sOranmore%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1704129225936!5m2!1sen!2sie" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <br>
-      <br>
-
-      <p>98 Main Street, Oranmore, Galway</p>
-      <p>H91 Y6 Z4</p>
-      <p>Tel 091 123456</p>
-
-      <br>
-</div>
-
-<div class="aboutus">
-
-    <br>
-
-</div>
-      
-    <h4>About Us</h4>
-      <br>
-
-      <p>Since 2014, we have been making Authentic Italian styled pizza in our Oranmore Pizzeria. Our Italian chefs Mario and Giuseppe only use the finest Irish produced ingredients. Please <a href="contact-us.html" aria-label="Opens contact us web page">contact us</a> for any special dietary requirements.</p>
-
-      <br>
-
-    
-    </div>
+        </div>
 
 
     </main>
-   
+
 
     <!--Footer-->
 
@@ -138,20 +132,23 @@
 
         <ul id="social-networks">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-        </li>
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
 
-        <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
-        </li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i
+                        class="fa-brands fa-square-x-twitter"></i></a>
+            </li>
 
-        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-square-youtube"></i></a>
-        </li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i
+                        class="fa-brands fa-square-youtube"></i></a>
+            </li>
 
-        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
-                
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+
             </li>
 
         </ul>
@@ -162,9 +159,9 @@
 
     <!-- FontAwesome Toolkit for social media icons. Adding here speeds up the loading of the rest of site, first.-->
 
-<script src="https://kit.fontawesome.com/6f3af5246a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f3af5246a.js" crossorigin="anonymous"></script>
 
 
 </body>
 
-</html>   
+</html>
