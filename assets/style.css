@@ -1,0 +1,437 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Moonrocks&display=swap');
+
+/* Asterisk wildcard used to override a browser default styles. */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+
+body{
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* Generic project color style */
+    color: green;
+    
+    /* Add Poppins google font style with sans-serif as a fallback */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menu anchor element */
+
+
+main{
+    background-color: cornsilk;
+    /* Make main element take up any surplus space between header and footer */
+    flex: 1 0 auto;
+     /* Push element down to make Main content visible */
+     margin-top: 47px;
+}
+
+/* Hamburger Responsive menu  */
+
+/* Menu formatting */
+
+a{
+  color: red;
+  width: 45vh;
+}
+
+.header{
+  background-color: green;
+  /* 10% Transparent box shadow using rgba */
+  box-shadow: 1px 1px 4px rgba (0,0,0,.1);
+/* Anchor menu to top */
+  position:fixed;
+  width: 120;
+/* So header menu will appear on top over the content */
+  z-index:3;
+}
+
+/* Our un-ordered main menu */
+
+.header ul{
+  margin:0;
+  padding:0;
+  /* Turns off bullet listing */
+  list-style: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+/* Styling for header anchor tags */
+.header ul a{
+/* Mouse-over hand only appears when hovered over our menu links */
+  display: block;
+  padding: 20px;
+/* For larger screens so menu is spread out */
+  border-right: 1px solid white;
+  text-decoration: none;
+
+}
+
+/* Change hover over color */
+
+.header ul a:hover{
+  background-color: gray;
+}
+
+/* Styling for menu logo */
+
+.header .logo{
+  
+  display: block;
+  font-family: 'Fredericka The Great', sans-serif;
+  font-style: italic;
+  font-size: xx-large;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 50%
+  
+}
+
+/* Styling for mobile menu - menu items are hidden till hamburger icon is clicked */
+
+
+.header .menu {
+  /* Hide the menu */
+  clear:both;
+  /* Animation collapse & expand menu when clicked */
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* Styling for menu-icon span element */
+
+.header .menu-icon{ 
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  /* Change to arrow to pointer */
+  cursor: pointer;
+}
+
+/* Styling for nav-icon child element aka top bun of hamburger */
+
+.header .menu-icon .nav-icon{
+background-color: #ffffff;
+display: block;
+height: 2px;
+width: 18px;
+position: relative;
+transition:background .2s ease-out;
+}
+
+/* Sudo element for our burger (middle tier) of our hamburger */
+
+.header .menu-icon .nav-icon:before{
+background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  /* Menu animation */
+  transition: all .2s ease-out;
+/* This moves element below previous styling */
+  top: 5px;
+}
+
+/* Styling as above this our bottom bun for hamburger */
+
+.header .menu-icon .nav-icon:after{
+background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  /* Menu animation */
+  transition: all .2s ease-out;
+/* This moves element below previous styling */
+  top: 10px;
+}
+
+/* Styling to hide our checkbox */
+
+.header .menu-btn{
+  display:none;
+}
+
+/* Styling when user clicks on this, the hamburger element expands to show our menu and disappears when they click again. This is achieved with our above transitioning rules. */
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
+
+/* Animation to turn our hamburger into an X (hiding top element using transparency). */
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* INDEX PAGE STYLING */
+
+
+/* Nero's Pizza Banner background - Pizza and Woodfire oven */
+
+.welcome{
+
+    padding: 30%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/woodfire-pizza-oven.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 35vh;
+
+    font-family: 'Fredericka The Great', sans-serif;
+    color: white;
+    text-align: center;
+  
+}
+
+.button-menu{
+              background-color: #ff0000;
+              color: #ffffff;
+              font-family: 'Poppins', sans-serif;
+
+}
+
+.opening-times{
+
+    padding: 5%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: green;
+    color: #ffffff;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+  }
+
+  .location{
+    align-content: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .aboutus{
+
+    /* Linear-gradient to slightly fade the 3 pizza image into the background */
+  
+    padding: 30%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/chef-with-pizza-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    align-items: baseline;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* MENU PAGE STYLING
+
+
+  /* Menu hero background image */
+
+.three-pizzas-image {
+  
+  padding: 30%;
+  /* Linear-gradient to slightly fade the 3 pizza image into the background */
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas-small.jpg");
+  
+    /* Position over menu */
+  
+    height: 30vh;
+
+    text-align: center;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+
+
+/* PIZZA MENU RESPONSIVE TABLE */
+
+table{
+  overflow-x:auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+/*Lightgreen border for our pizza ingredients (child element). */
+
+tr:nth-child(even){background-color: lightgreen}
+
+.extra-toppings{
+      
+
+  display: list-item;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  list-style-type: circle;
+;
+
+}
+
+/* Allergy Contents Text box */
+
+.allergy{
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: gray;
+  color: #ffffff;
+  
+}
+
+
+/* CONTACT US PAGE STYLING */
+
+.contactus-image {
+  
+  
+  /* Linear-gradient to slightly fade the 3 pizza image into the background */
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/girl-with-pizza.jpg");
+  
+  
+    /* Position over menu */
+  
+    
+    height: 75vh;
+
+    text-align: center;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+
+
+/* Form */
+
+#contactus {
+    
+  background-size: cover;
+  background-position: 75%;
+  padding: 20px 5% 0 5%;
+  flex-grow: 1;
+}
+
+#contactus-form {
+  color: #ffffff;
+  background-color: rgba(60, 60, 60, 0.6);
+  padding: 30px;
+}
+
+#contactus-form>h2 {
+  color: #fafafa;
+  margin-bottom: 15px;
+}
+
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  padding: 0 5px;
+}
+
+
+.send {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: orange;
+  color: #fafafa;
+}
+
+
+
+/* SOCIAL MEDIA FOOTER */
+
+#social-networks {
+  
+  
+  background-color: #ff0000;
+  text-align: center;
+  display: flex;
+  padding: 20px 0;
+  bottom: 0;
+  justify-content: space-evenly;
+  /* Remove listing bullet points */
+  list-style-type: none;
+}
+
+/* Targets i elements for favicons */
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: white;
+}
+
+
+@media screen and (min-width: 653px){
+
+  .header li {
+    float: left;   
+  }
+
+.header li a{
+  padding: 20px 30px;
+}
+
+.header.menu{
+  clear:none;
+  float: right;
+  max-height:none;
+}
+
+.header .menu-icon{
+  display:none;
+}
+
+}
