@@ -13,7 +13,7 @@
 
 body{
     
-    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
 
@@ -31,8 +31,7 @@ main{
     background-color: cornsilk;
     /* Make main element take up any surplus space between header and footer */
     flex: 1 0 auto;
-     /* Push element down to make Main content visible */
-     margin-top: 47px;
+     margin-top: 0;
 }
 
 /* Hamburger Responsive menu  */
@@ -41,18 +40,17 @@ main{
 
 a{
   color: red;
-  width: 45vh;
 }
 
 .header{
   background-color: green;
   /* 10% Transparent box shadow using rgba */
-  box-shadow: 1px 1px 4px rgba (0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba (0,0,0,.1);
 /* Anchor menu to top */
-  position:fixed;
-  width: 120;
+  width: 100%;
 /* So header menu will appear on top over the content */
   z-index:3;
+  
 }
 
 /* Our un-ordered main menu */
@@ -67,10 +65,10 @@ a{
 }
 
 /* Styling for header anchor tags */
-.header ul a{
+.header li a{
 /* Mouse-over hand only appears when hovered over our menu links */
   display: block;
-  padding: 20px;
+  padding: 20px 20px;
 /* For larger screens so menu is spread out */
   border-right: 1px solid white;
   text-decoration: none;
@@ -79,7 +77,7 @@ a{
 
 /* Change hover over color */
 
-.header ul a:hover{
+.header li a:hover, .header .menu-btn:hover{
   background-color: gray;
 }
 
@@ -118,6 +116,7 @@ a{
   float: right;
   /* Change to arrow to pointer */
   cursor: pointer;
+  user-select: none;
 }
 
 /* Styling for nav-icon child element aka top bun of hamburger */
@@ -196,28 +195,34 @@ background: transparent;
 
 .welcome{
 
-    padding: 30%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/woodfire-pizza-oven.jpg");
+    padding: 20vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    height: 35vh;
+  
+    
 
     font-family: 'Fredericka The Great', sans-serif;
-    color: white;
-    text-align: center;
-  
+    color: #ffffff
 }
 
-.offers{
+.button-menu{
+              background-color: #ff0000;
+              color: #ffffff;
+              font-family: 'Poppins', sans-serif;
 
+}
+
+.opening-times{
+
+    padding: 5%;
     border-collapse: collapse;
     border-spacing: 0;
     background-color: green;
     color: #ffffff;
-    align-items: center;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
     
   }
 
@@ -237,12 +242,9 @@ background: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/chef-with-pizza-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
     height: 35vh;
-
     align-items: baseline;
     border-collapse: collapse;
-    border-spacing: 0;
     font-family: 'Poppins', sans-serif;
   }
 
@@ -253,14 +255,14 @@ background: transparent;
 
 .three-pizzas-image {
   
-  padding: 30%;
+  padding: 30vh;
   /* Linear-gradient to slightly fade the 3 pizza image into the background */
   
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas-small.jpg");
   
     /* Position over menu */
   
-    height: 80vh;
+    height: 30vh;
 
     text-align: center;
   
@@ -288,7 +290,7 @@ th, td {
   padding: 8px;
 }
 
-/*Lightgreen border for our pizza ingredients. */
+/*Lightgreen border for our pizza ingredients (child element). */
 
 tr:nth-child(even){background-color: lightgreen}
 
@@ -327,16 +329,13 @@ tr:nth-child(even){background-color: lightgreen}
   
     /* Position over menu */
   
-    
-    height: 75vh;
-
     text-align: center;
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-  
+    
+
   }
 
 
@@ -416,16 +415,88 @@ tr:nth-child(even){background-color: lightgreen}
 
 .header li a{
   padding: 20px 30px;
+  border: none;
 }
 
-.header.menu{
+.header .menu{
   clear:none;
   float: right;
   max-height:none;
+  background-color: green;
 }
 
 .header .menu-icon{
   display:none;
 }
+
+}
+
+@media screen and (min-width: 768px){
+
+  
+.welcome{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/woodfire-pizza-oven.jpg");
+  padding: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+
+  font-family: 'Fredericka The Great', sans-serif;
+  font-size: xx-large;
+  color: #ffffff;
+}
+
+/*
+
+.button-menu{
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: xx-large;
+            font-family: 'Poppins', sans-serif;
+            
+
+}
+*/
+
+.opening-times{
+
+  padding: 5%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: green;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  
+}
+
+.location{
+  align-content: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+font-size: larger;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+  .aboutus{
+
+    /* Linear-gradient to slightly fade the chef with pizza into the background */
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/chef-with-pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: x-large;
+    height: 200vh;
+    align-items: baseline;
+    border-collapse: collapse;
+
+  }
+
 
 }
