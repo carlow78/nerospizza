@@ -13,7 +13,12 @@
 
 html, body {
     
-    min-height: 100%;
+    margin: 0;
+    height: 100%;
+
+}
+body{
+
     display: flex;
     flex-direction: column;
 
@@ -24,14 +29,18 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+header, footer{
+  flex: none;
+}
+
 /* Menu anchor element */
 
 main{
 
   background-color: cornsilk;
     /* Make main element take up any surplus space between header and footer */
-    flex: 1 0 auto;
-     margin-top: 0px;
+    overflow-y: scroll;
+    flex: auto;
 }
 
 /* Hamburger Responsive menu.  */
@@ -225,7 +234,7 @@ background: transparent;
     height: auto;
     border-collapse: collapse;
     border-spacing: 0;
-    background-color: #000000;
+    background-color: #1D0704;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -420,10 +429,10 @@ input[type=submit] {
 
 /* --- MEDIA QUERIES FOR LARGER SCREEN TYPES ---- */
 
-@media screen and (min-width: 653px){
+@media screen and (min-width: 600px){
 
 
-  /* Disable Hamburger menu and display menu options on screens above 653px */
+  /* Disable Hamburger menu and display menu options on screens above 600px */
 
   .header li {
     float: left;   
