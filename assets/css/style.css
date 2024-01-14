@@ -1,4 +1,5 @@
 /* Google fonts import */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Moonrocks&display=swap');
 
 /* Asterisk wildcard used to override a browser default styles. */
@@ -23,9 +24,11 @@ body{
     flex-direction: column;
 
     /* Generic project color style */
+
     color: #B42A04;
     
     /* Add Poppins google font style with sans-serif as a fallback */
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -43,7 +46,7 @@ main{
     flex: auto;
 }
 
-/* Hamburger Responsive menu for mobile. Adapted by watching online youtube tutorial  Responsive Pure CSS Menu Tutorial - https://www.youtube.com/watch?v=sjrp1FEHnyA*/
+/* Hamburger Responsive menu for mobile. Adapted by watching online youtube tutorial  "Responsive Pure CSS Menu Tutorial" - https://www.youtube.com/watch?v=sjrp1FEHnyA */
 
 /* Menu formatting */
 
@@ -52,9 +55,10 @@ a{
 }
 
 .header{
+
   background-color: #B42A04;
   /* 10% Transparent box shadow using rgba */
-  box-shadow: 1px 1px 4px 0 rgba (0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
 /* Anchor menu to top */
   width: 100%;
 /* So header menu will appear on top over the content */
@@ -259,7 +263,7 @@ background: transparent;
     font-family: 'Poppins', sans-serif;
   }
 
-/* ---------------- MENU.html PAGE STYLING ------------------------------- /*
+/* ---------------- MENU PAGE STYLING ------------------------------- /*
 
 
   /* Menu hero background image */
@@ -269,7 +273,7 @@ background: transparent;
   padding: 30vh;
   /* Linear-gradient to slightly fade the 3 pizza image into the background */
   
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas-small.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.webp");
   
     /* Position over menu */
   
@@ -339,7 +343,7 @@ tr:nth-child(even){background-color: lightgreen}
   
   /* Linear-gradient to slightly fade the Girl holding pizza image into the background */
   
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/girl-with-pizza50.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/girl-with-pizza.webp");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -348,7 +352,7 @@ tr:nth-child(even){background-color: lightgreen}
     width: 100%;
     height: auto;
 
-
+}
 input[type=text], [type=email], select, textarea{
 
   font-family: 'Poppins', sans-serif;
@@ -389,17 +393,14 @@ input[type=submit] {
   margin-top: 8px;
 }
 
-.row:after 
-{
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
- 
 
-}
 
-/* SOCIAL MEDIA FOOTER - Thanks to Code Institutes Love Running Walk-Through Project */
+/* SOCIAL MEDIA FOOTER - Adapted after following the Code Institutes Love Running Walk-Through Project */
 
 #social-networks {
   
@@ -457,6 +458,13 @@ input[type=submit] {
 .contactus{
   padding-bottom: 53vh;
 }
+
+.aboutus{
+  min-width: 100%;
+  height:auto;
+}
+
+
 
 }
 
