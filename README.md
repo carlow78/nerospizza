@@ -1,6 +1,6 @@
 # **_Nero's Pizza_**
 
-Nero's Pizza is a small recently opened (fictional) pizzeria based in Oranmore, Galway, Ireland. The site is in its infancy as is targeted at people around the area (and beyond) to view the pizzeria menu and discover what's on offer.
+Nero's Pizza is a small recently opened (fictional) pizzeria based in Oranmore, Galway, Ireland. The site is in its infancy as is targeted at people around the area (and beyond) to learn more about the new business.
 
 The site was designed using the mobile first development model with additional media queries for devices with larger screens.
 
@@ -8,7 +8,11 @@ The site was designed using the mobile first development model with additional m
 
 View the Live Website - <a href="https://carlow78.github.io/nerospizza/index.html" target="_blank" rel="noopener">Nero's Pizza</a>
 
-![Nero's Pizza responsive design] Insert updated image here 
+# Am I responsive images:
+
+The below screenshot shows what the site looks like in various screensizes.
+
+![Am I responsive images](assets/images/am-i-responsive.png)
 
 # Contents
 
@@ -17,22 +21,23 @@ View the Live Website - <a href="https://carlow78.github.io/nerospizza/index.htm
     * [Wireframes](<#wireframes>)
     * [Site Structure](<#site-structure>)
     * [Design Choices](<#design-choices>)
-    *  [Typography](<#typography>)
+    *  [Fonts](<#fonts>)
     *  [Color Scheme](<#color-scheme>)
-* [**Features**](<#features>)
-    * [**Home**](<#navigation-menu>)
-         * [Navigation menu](<#navigation-menu>)
-         * [Contact-us](<#contact-us>)
-         * [Opening-Hours] (<#opening-hours>)
-         [About-Us] (<#about-us)
-         * [Footer](<#footer>)
-[**Menu**]
 
-    * [**Contact Us**](<#contact-us>)
-       * Contact details
-       * Location map
-    * [**Form Confirmation**](<#form-confirmation>)
-    * [**Future Features**](<#future-features>)
+* [**Main Features**](<#features>)
+
+    [**Header Section**](<#header-section>)
+        
+  * [Navigation Menu](<#navigation-menu>)
+  * [Restaurant Name](<#restaurant-name>)
+  
+* [**Footer Section**](<#footer>)
+
+* [**Menu Page**](<#menu-page>)
+
+* [**Contact Us Page**](<#contactus-page>)
+
+ [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
@@ -46,11 +51,13 @@ View the Live Website - <a href="https://carlow78.github.io/nerospizza/index.htm
 
 ## User Stories
 
- * As a user I want to find out the opening times of the pizzeria.
-* As a user I want to easily to be able to contact Nero's Pizza for more information.
-* As a user I want to see what pizzas are on offer, the price and ingredients.
-* As a user I want to see if the pizza I like contains any allergens for me or the people I want to share the pizza with.
-* As a user I want to possibly connect with Nero's Pizza on social media.
+As a user I want to ...
+
+* find out the opening times of the pizzeria.
+* contact Nero's Pizza for more information.
+* see what pizzas are available, the price and ingredients.
+* see if any pizza contains any allergens
+* possibly connect with Nero's Pizza on social media.
 
 [Back to top](<#contents>)
 
@@ -71,69 +78,112 @@ Nero's Pizza website has three pages. The [home page](index.html) is the default
 
 ## Design Choices
 
- * ### Typography
+* ### Fonts
 
-      The fonts chosen were 'Fredericka The Great' for the Pizzeria's Name and slogan and  'Poppins' for the body text. They fall back to sans-serif if neither font is available on the viewing device. 
-     *  'Fredericka The Great' was chosen for the headings. After seeing it on a past Code Institute's project and liking it. 
-      * 'Poppins' is used for the body text as it is a clear font and easy to read (I tried several other fonts but found it easiest to read).
+The fonts chosen were 'Fredericka The Great' for the Pizzeria's Name and slogan and  'Poppins' for the body text. They fall back to sans-serif if neither font is available on the viewing device. 
+
+  *  'Fredericka The Great' was chosen for the headings. After seeing it on a past Code Institute project and liking it. 
+
+   * 'Poppins' is used for the body text as it is a clear font and easy to read (I tried several other fonts but found it easiest to read).
 
  * ### Color Scheme
 
-Being a complete novice to website design. I decided to upload the first image users will see when the visit site to Canva's- online color palette generator. (https://www.canva.com/colors/color-palette-generator/). I liked two of the four (milano red and creole) color suggestions and thought they would suit my website. Both colors would also suit the remaining photos as they are of similar contrast and styling.
+
+I played around with different colors on the website but because I am a complete novice I decided to let AI help me to decide. So, I to upload the first image users will see when the visit site to Canva's - online color palette generator. (https://www.canva.com/colors/color-palette-generator/). I liked two of the four (milano red and creole) color suggestions and thought they would suit my website. Both colors would also suit the remaining photos as they are of similar contrast and styling.
 
 ![color Palate image](assets/images/canva-palette-match.png)
 
 
 [Back to top](<#contents>)
-# Features
 
-The website site contains many features that the user would probably be familiar with, such as a hamburger menu (mobile) and navigation bar (for larger screens) and contact form. Along with the location of the business.
+# Main Features
 
-## Existing Features  
+### Header Section
 
-  * ### Hamburger/Navigation Menu
+The website site contains many features that the regular internet user would probably be familiar with, such as a header section with logo/site name, a hamburger menu (mobile)/navigation bar (for larger screens), and a footer containing social media outlets for the business.
 
-    * The hamburger menu (for mobiles) and navigation links for larger screens are located at the top of all the pages in the site (within the header section), it is fully responsive and contains links to all the pages of the site to enable ease of navigation in one convenient location.
+  ### Navigation Menu
 
-    * The restaurant name is clickable with a link back to the home page. It is a constant across all webpages.
+  The site contains a hamburger menu ![Hamburger menu](assets/images/hamburger-menu.png) (for mobiles) and navigation links  for larger screens (above 600px) ![Navigation menu](assets/images/navigation-menu.png)
+    
+  The hamburger/navigation menu are located at the top of all the pages in the site (within the header section), both are fully responsive and contain links to all the pages of the site to enable ease of navigation.
+
+### Restaurant Name
+
+  The restaurant name ![Restaurant Name](assets/images/restaurant-name.png) is clickable with a link back to the home page. It is a constant across all three webpages.
+
+ ### Footer
+    
+   Contains social media links to business social media outlets. All links are opened in new tabs.
+
+    
+![Footer image](assets/images/footer-icons.png)
+
+[Back to top](<#contents>)
+
+# Other features
+
+
+### Home (index.html)
+
+ ### Opening Hours
+
+This section displays the opening hours of the pizzeria.
+
+
+### About Us
+
+The About Us section lets the users know a little about Nero's Pizza and it contains a <u>contact us</u> link to reach out to the site owners.
+
+
+### Location/Telephone
+
+Displays the Google Map image of the pizzerias location, and their telephone number.
+      
+![Location image](assets/images/pizzeria-location.png)
 
 !
 [Back to top](<#contents>)
 
+## Menu Page
 
-  * ### About-Us
-    * The About Us section lets the user know what Nero's Pizza is and who we are. 
-    * An inbedded link to the contact section in the text will help the user navigate quickly to the next step of the project process.
+This page primarily contains the pizzas available at the pizzeria. Each pizza listed contains its current price and ingredients.
 
-![About-Us image](assets/readme-images/about-us.png)
+![Menu ingredients](assets/images/menu-ingredients.png)
+
+Each pizza contains allergen warnings. These are highlighted in brackets in the ingredients.
+
+![Allergen brackets](assets/images/allergen-brackets.png)
+
+The Allergen keys is displayed at the bottom of the menu. 
+
+![Allergen keys](assets/images/allergen-keys.png)
+
+Finally, the pepper icon (thanks to font awesome) is shown on any pizza name that contains spicy ingredient(s).
+
+![Spicy content](assets/images/spicy-indicator.png)
+
 [Back to top](<#contents>)
 
+# Contact Us Page
 
-[Back to top](<#contents>)
+  This webpage is contains 4 fields
 
-* ### Footer
-    
-    * Contains social media links. To enhance the UX the links open in other tabs.
-    * The social media presence will help the user with their research into Nero's Pizza and will also encourage them to connect with Nero's Pizza.
-    * To help the user with navigation on all devices a 'scroll to the top' arrow was added. It sticks to the bottom left of the screen at all times to give the user a quick and unobstructed way to the navigation bar. The arrow is semi-transparent with a light/dark contrasting border for use against all background colors.
-    * The GitHub and LinkedIn social links are there for the educational side of this project. They would be removed if this site was deployed outside of this project.
-    
-![Footer image](assets/readme-images/footer.png)
-[Back to top](<#contents>)
+  1. First name
+  2. Second name
+  3. Email address
+  4. Comments
 
-* ### 
+  All 4 fields must be filled or else the user will receive an alert message, when they try to submit their query.
 
-* ### Contact Us
+  For the first name/second name and comments fields the following alert message is shown
 
-    * This section should complete the online journey for the user. It has a map (location of real life workshop not shown due to privacy reasons), address, phone number and email address details.
-    * In case the user would like to contact Nero's Pizza directly there is an e-mail link icon. It opens the user's default email provider with an email addressed to Nero's Pizza.
-    * There is a form that the user can choose to fill in. It has 5 input fields, name, email, address, and a textarea. 
+  ![Message Alert](assets/images/text-alert.png)
 
-![Contact Us page image](assets/readme-images/contact-us2.png)
-[Back to top](<#contents>)
+And for the email field:
 
-* ### Form Confirmation
-    * This page confirms for the user that their details have been sent to Nero's Pizza. For this project it validates the form only.
+![Email Alert](assets/images/email-alert.png)
+
 
 [Back to top](<#contents>)
 
@@ -144,15 +194,14 @@ The website site contains many features that the user would probably be familiar
 * More information about the owners of the pizzeria. 
 * Online reviews of the pizzeria.
 
-
 [Back to top](<#contents>)
 
 # Technologies Used
 * [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
 * [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
-* [Visual Studio](https://code.visualstudio.com/) - was used to code locally after being recommended by a fellow student on the course. I started initially using Codeanywhere but due to its slowness and some issues when I was following the Code Institutes Love Running walkthrough project. I decided to look for an alternative.
-* [Github](https://github.com/) - was used to store the project's webpages and images. After every session I pushed the updates to github for further validation and testing.
+* [Visual Studio](https://code.visualstudio.com/) - was used to code locally after being recommended by a fellow student on the course. I started initially using Codeanywhere but due to its slowness and some issues when I was following and coding along with the Code Institute's excellent Love Running walkthrough project. I decided to look for an alternative.
+* [Github](https://github.com/) - was used to store the project's webpages and images. After every session I pushed the updates to github for further validation and testing. 
 
 [Back to top](<#contents>)
 
@@ -165,56 +214,74 @@ Please refer to [**_here_**](TESTING.md) for more information on testing Nero's 
 # Deployment
 
 ### **To deploy the project**
+
 The site was deployed to GitHub pages. The steps to deploy a site are as follows:
+
+Note: Early deployment ensures bugs or issues are discovered at the earliest possible stage in the live environment. 
+
   1. In the GitHub repository, navigate to the **Settings** tab.
   2. Once in Settings, navigate to the **Pages** tab on the left hand side.
-  3. Under **Source**, select the branch to **master**, then click **save**.
-  4. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+  3. Under **Source**, select 'Deploy from a branch'
+  4. Under **Default Branch** make sure 'main' is selected as the 'branch'  and '/root' as the folder.
+  5. Finally, click the **Save** button under the **Branch** section
+  6. Depending on the size of the content the deployed website will finally appear at the top of Github with a link to Visit site.
+![GitHub pages deployed image](assets/images/github-deploy.png)
 
-![GitHub pages deployed image](assets/readme-images/deploy.png)
-
-  The live link to the Github repository can be found here - https://github.com/EwanColquhoun/wawaswoods
+  The live link to the Github repository can be found here - https://github.com/carlow78/nerospizza
 
 ### **To fork the repository on GitHub**
-A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
-1. Log in to **GitHub** and locate the [repository](https://github.com/EwanColquhoun/wawaswoods).
-2. On the right hand side of the page inline with the repository name is a button called **'Fork'**, click on the button to create a copy of the original repository in your GitHub Account.
 
-![GitHub forking process image](assets/readme-images/forking.png)
+A Fork is a new repository for sharing and colaborating with others without impacting the original.
+
+1. Log in to **GitHub** and locate the repository you wish to Fork.
+
+2. On the right hand side of the page inline with the repository name is a button called **'Fork'**, click on the **Create Fork** button to create a copy of the original repository in your GitHub Account.
+
+![GitHub forking process image](assets/images/fork-it.png)
 
 ### **To create a local clone of this project**
 The method from cloning a project from GitHub is below:
 
 1. Under the repository’s name, click on the **code** tab.
-2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
+2. In the **HTTPS** section, click on the clipboard icon to copy the given URL.
 ![Cloning image](assets/readme-images/clone.png)
-3. In your IDE of choice, open **Git Bash**.
-4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type **git clone**, and then paste the URL copied from GitHub.
-6. Press **enter** and the local clone will be created.
+3. Click on **Open with GitHub Desktop** link
+4. A warning message 'This is site is trying to open GitHubDesktop' is displayed. 
+5. Click **Open** button
+5. Take note of the 'local path' for future reference
+6. Click on **Clone** button
 
+![Cloning Repository](assets/images/clone-it.png)
 
 
 [Back to top](<#contents>)
 
 # Credits
+
 ### Content
 
 * The fonts came from [Google Fonts](https://fonts.google.com/).
 * The map is embedded from [Google Maps](https://www.google.com/maps).
-* The color palate was produced with the help of [Colormind](http://colormind.io/).
+* The color palette was produced with the help of [Canvas Color Palette Generator](https://www.canva.com/colors/color-palette-generator/).
 * The icons came from [Font Awesome](https://fontawesome.com/).
-* The hamburger menu came from a [YouTube tutorial](https://www.youtube.com/watch?v=fNcJuPIZ2WE).
+* The mobile hamburger menu was created with the help of this [YouTube tutorial](https://www.youtube.com/watch?v=fNcJuPIZ2WE).
+* The [hero image](https://www.w3schools.com/howto/howto_css_hero_image.asp), [responsive menu](https://www.w3schools.com/howto/howto_css_table_responsive.asp) and [responsive contact forms](https://www.w3schools.com/howto/howto_css_responsive_form.asp) were created with the help of w3 schools online tutorials.
 * [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes.
+* The pizza menu inspired by [Dinn Ri Carlow Pizza Menu](https://www.dinnri.com/index.php/pizza-menu/)
+* Pizzeria content and about us inspiration courtesy of [The Dough Bros](https://www.thedoughbros.ie/). 
+* Footer created with the help of Code Institutes excellent Love Running Walkthrough Project. 
 
 
 ### Media
-* The photos all came from pexels.com
-* The photos were compressed using Pho
+
+* The photos all came from [Pexel](https://www.pexels.com/)
+* The photos were compressed using Windows Photos Application
+* Conversion of photos using [Convertio](https://convertio.co/) from .jpg to .webp
 
 [Back to top](<#contents>)
 
 # Acknowledgements
-The site was completed as a Portfolio 1 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support.
+
+The site was completed as a Portfolio 1 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). Thank you to my mentor Precious Ijege for his input and sharing projects similar to mine and [Ewan's](https://github.com/EwanColquhoun/wawaswoods) excellent documentations, the Slack community, the Stack Overflow community and all at the Code Institute for their help and support.
 
 [Back to top](<#contents>)
