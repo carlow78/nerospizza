@@ -244,7 +244,6 @@ The method from cloning a project from GitHub is below:
 
 1. Under the repository’s name, click on the **code** tab.
 2. In the **HTTPS** section, click on the clipboard icon to copy the given URL.
-![Cloning image](assets/readme-images/clone.png)
 3. Click on **Open with GitHub Desktop** link
 4. A warning message 'This is site is trying to open GitHubDesktop' is displayed. 
 5. Click **Open** button
