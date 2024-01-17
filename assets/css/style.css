@@ -42,7 +42,6 @@ main{
 
   background-color: cornsilk;
     /* Make main element take up any surplus space between header and footer */
-    overflow-y: scroll;
     flex: auto;
 }
 
@@ -453,10 +452,15 @@ input[type=submit] {
 }
 }
 
+.contactus{
+  padding-bottom: 30%;
+}
+
+
 @media screen and (min-width: 978px){
 
 .contactus{
-  padding-bottom: 53vh;
+  padding-bottom: 60%;
 }
 
 .aboutus{
