@@ -35,7 +35,7 @@ The below screenshot shows what the site looks like in various screensizes.
 
 * [**Menu Page**](<#menu-page>)
 
-* [**Contact Us Page**](<#contactus-page>)
+* [**Contact Us Page**](<#contact-us-page>)
 
  [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
