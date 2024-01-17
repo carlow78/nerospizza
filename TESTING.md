@@ -124,6 +124,7 @@ This part of the testing process showed that the site's performance was pretty s
 2. Afterwards the images were saved as .jpg. 
 3. Next step, was to save jpg as webp using [convertio](https://convertio.co/) an online file convertor tool. (webp allows websites to display high-quality images - but with much smaller file sizes jpeg, png etc - [Source - Adobe](https://www.adobe.com/ie/creativecloud/file-types/image/raster/webp-file.html) files). 
  4. All the images needed to be removed before adding the reduced photos to the repository in their place
+    
  Outcome - Once this was done the performance went from ~60% to ~90%. 
  
 
