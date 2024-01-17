@@ -86,9 +86,6 @@ Contact Us
 
 My main issue with Contact Us was the lack of content which resulted in blank spaces (my cornsilk background underneath my contact us image) on larger  screen. This issue was mainly resolved by adding media queries with padding-bottom: % but not totally. 
 
-![image](https://github.com/carlow78/nerospizza/assets/images/contactus-bg.png)
-
-
 I did resolve the issue when I added more content by moving the location container from the index page but I wasnt happy with the change.
 
 
@@ -127,7 +124,6 @@ This part of the testing process showed that the site's performance was pretty s
 2. Afterwards the images were saved as .jpg. 
 3. Next step, was to save jpg as webp using [convertio](https://convertio.co/) an online file convertor tool. (webp allows websites to display high-quality images - but with much smaller file sizes jpeg, png etc - [Source - Adobe](https://www.adobe.com/ie/creativecloud/file-types/image/raster/webp-file.html) files). 
  4. All the images needed to be removed before adding the reduced photos to the repository in their place
-    
  Outcome - Once this was done the performance went from ~60% to ~90%. 
  
 
