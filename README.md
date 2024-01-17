@@ -1,6 +1,6 @@
 # **_Nero's Pizza_**
 
-Nero's Pizza is a small recently opened (fictional) pizzeria based in Oranmore, Galway, Ireland. The site is in its infancy as is targeted at people around the area (and beyond) to learn more about the new business.
+Nero's Pizza is a small recently opened (fictional) pizzeria based in Oranmore, Galway, Ireland. The site is for a new business and is targeted at people around the area (and beyond) to get to know the business more.
 
 The site was designed using the mobile first development model with additional media queries for devices with larger screens.
 
@@ -165,7 +165,7 @@ Finally, the pepper icon (thanks to font awesome) is shown on any pizza name tha
 
 [Back to top](<#contents>)
 
-# Contact Us Page
+## Contact Us Page
 
   This webpage is contains 4 fields
 
@@ -231,7 +231,7 @@ Note: Early deployment ensures bugs or issues are discovered at the earliest pos
 
 ### **To fork the repository on GitHub**
 
-A Fork is a new repository for sharing and colaborating with others without impacting the original.
+A Fork is a new repository for sharing and collaborating with others without impacting the original.
 
 1. Log in to **GitHub** and locate the repository you wish to Fork.
 
