@@ -86,6 +86,9 @@ Contact Us
 
 My main issue with Contact Us was the lack of content which resulted in blank spaces (my cornsilk background underneath my contact us image) on larger  screen. This issue was mainly resolved by adding media queries with padding-bottom: % but not totally. 
 
+![image](https://github.com/carlow78/nerospizza/assets/images/contactus-bg.png)
+
+
 I did resolve the issue when I added more content by moving the location container from the index page but I wasnt happy with the change.
 
 
