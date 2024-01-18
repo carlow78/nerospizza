@@ -11,7 +11,7 @@ View the Live Website - <a href="https://carlow78.github.io/nerospizza/index.htm
 
 The below screenshot shows what the site looks like in various screensizes.
 
-![Am I responsive images](assets/images/am-i-responsive.png)
+![Am I responsive images](assets/images/am-responsive.png)
 
 # Contents
 
