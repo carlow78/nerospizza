@@ -265,6 +265,7 @@ background: transparent;
 .three-pizzas-image {
   
   padding: 30vh;
+    
   /* Linear-gradient to slightly fade the 3 pizza image into the background */
   
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3-pizzas.webp");
@@ -492,7 +493,7 @@ input[type=submit] {
 .location{
 
 margin: auto;
-width: 1305px;
+width: 1024px;
 
 }
 
