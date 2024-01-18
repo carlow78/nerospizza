@@ -42,13 +42,13 @@ The below screenshot shows what the site looks like in various screensizes.
 
  * [**Future Features**](<#future-features>)
 
-[**Technologies Used**](<#technologies-used>)
+* [**Technologies Used**](<#technologies-used>)
 
-[**Testing**](<#testing>)
+* [**Testing**](<#testing>)
 
-[**Deployment**](<#deployment>)
+* [**Deployment**](<#deployment>)
 
-[**Credits**](<#credits>)
+* [**Credits**](<#credits>)
 
    * [**Content**](<#content>)
   * [**Media**](<#media>)
