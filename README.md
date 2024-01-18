@@ -53,7 +53,7 @@ The below screenshot shows what the site looks like in various screensizes.
    * [**Content**](<#content>)
   * [**Media**](<#media>)
 
-[**Acknowledgements**](<#acknowledgements>)
+* [**Acknowledgements**](<#acknowledgements>)
 
 
 # User Experience (UX)
