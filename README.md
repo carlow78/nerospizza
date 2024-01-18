@@ -32,9 +32,13 @@ The below screenshot shows what the site looks like in various screensizes.
   
   [**Footer Section**](<#footer>)
 
-  [**Menu Page**](<#menu-page>)
+* [**Other Features**](<#other-features>)
 
-  [**Contact Us Page**](<#contact-us-page>)
+    * [Home Page](<#home-page>)
+
+   * [Menu Page](<#menu-page>)
+
+    * [Contact Us Page](<#contact-us-page>)
 
  * [**Future Features**](<#future-features>)
 
@@ -129,7 +133,7 @@ The website site contains many features that the regular internet user would pro
 # Other features
 
 
-### Home (index.html)
+### Home Page
 
  ### Opening Hours
 
