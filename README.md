@@ -1,6 +1,6 @@
 # **_Nero's Pizza_**
 
-Nero's Pizza is a small recently opened (fictional) pizzeria based in Oranmore, Galway, Ireland. The site is for a new business and is targeted at people around the area (and beyond) to get to know the business more.
+Nero's Pizza is a small recently opened (fictional) pizzeria based in Oranmore, Galway, Ireland. The site is in its infancy as is targeted at people around the area (and beyond) to learn more about the new business.
 
 The site was designed using the mobile first development model with additional media queries for devices with larger screens.
 
@@ -8,7 +8,6 @@ The site was designed using the mobile first development model with additional m
 
 View the Live Website - <a href="https://carlow78.github.io/nerospizza/index.html" target="_blank" rel="noopener">Nero's Pizza</a>
 
-# Am I responsive images:
 
 The below screenshot shows what the site looks like in various screensizes.
 
@@ -31,20 +30,26 @@ The below screenshot shows what the site looks like in various screensizes.
   * [Navigation Menu](<#navigation-menu>)
   * [Restaurant Name](<#restaurant-name>)
   
-* [**Footer Section**](<#footer>)
+  [**Footer Section**](<#footer>)
 
-* [**Menu Page**](<#menu-page>)
+  [**Menu Page**](<#menu-page>)
 
-* [**Contact Us Page**](<#contact-us-page>)
+  [**Contact Us Page**](<#contact-us-page>)
 
- [**Future Features**](<#future-features>)
-* [**Technologies Used**](<#technologies-used>)
-* [**Testing**](<#testing>)
-* [**Deployment**](<#deployment>)
-* [**Credits**](<#credits>)
-    * [**Content**](<#content>)
-    * [**Media**](<#media>)
-*  [**Acknowledgements**](<#acknowledgements>)
+ * [**Future Features**](<#future-features>)
+
+[**Technologies Used**](<#technologies-used>)
+
+[**Testing**](<#testing>)
+
+[**Deployment**](<#deployment>)
+
+[**Credits**](<#credits>)
+
+   * [**Content**](<#content>)
+  * [**Media**](<#media>)
+
+[**Acknowledgements**](<#acknowledgements>)
 
 
 # User Experience (UX)
@@ -167,7 +172,7 @@ Finally, the pepper icon (thanks to font awesome) is shown on any pizza name tha
 
 ## Contact Us Page
 
-  This webpage is contains 4 fields
+  This webpage contains 4 fields for user input.
 
   1. First name
   2. Second name
@@ -224,7 +229,7 @@ Note: Early deployment ensures bugs or issues are discovered at the earliest pos
   3. Under **Source**, select 'Deploy from a branch'
   4. Under **Default Branch** make sure 'main' is selected as the 'branch'  and '/root' as the folder.
   5. Finally, click the **Save** button under the **Branch** section
-  6. Depending on the size of the content the deployed website will finally appear at the top of Github with a link to Visit site.
+  6. Depending on the size of the content the deployed website will finally appear at the top of Github with a link to **Visit site**.
 ![GitHub pages deployed image](assets/images/github-deploy.png)
 
   The live link to the Github repository can be found here - https://github.com/carlow78/nerospizza
@@ -248,7 +253,7 @@ The method from cloning a project from GitHub is below:
 4. A warning message 'This is site is trying to open GitHubDesktop' is displayed. 
 5. Click **Open** button
 5. Take note of the 'local path' for future reference
-6. Click on **Clone** button
+6. Click on the **Clone** button
 
 ![Cloning Repository](assets/images/clone-it.png)
 
